@@ -1,4 +1,6 @@
-﻿using System;
+﻿using FIT5032_MyFirstWebApplication.Hello_World;
+using FIT5032_MyFirstWebApplication.Models.Exercise;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -15,8 +17,12 @@ namespace FIT5032_MyFirstWebApplication.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Message = "your application description page.";
 
+            Hello hello = new Hello();
+            ViewBag.Message = hello.GetHello();
+            ExampleDictionary ed = new ExampleDictionary();
+            ed.Example();
             return View();
         }
 

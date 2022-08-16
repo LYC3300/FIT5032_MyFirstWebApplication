@@ -191,7 +191,24 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Hello_World\Hello.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\Exercise\Student.cs" />
+    <Compile Include="Models\FIT5032_MyFirstModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FIT5032_MyFirstModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\FIT5032_MyFirstModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FIT5032_MyFirstModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\FIT5032_MyFirstModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FIT5032_MyFirstModel.edmx</DependentUpon>
+    </Compile>
     <Compile Include="Models\FIT_5032_Model1.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -210,10 +227,10 @@
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\Student.cs">
-      <DependentUpon>FIT_5032_Model1.tt</DependentUpon>
+      <DependentUpon>FIT5032_MyFirstModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Unit.cs">
-      <DependentUpon>FIT_5032_Model1.tt</DependentUpon>
+      <DependentUpon>FIT5032_MyFirstModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
@@ -222,6 +239,10 @@
     <Content Include="App_Data\FIT5032_MyDatabase1.mdf" />
     <Content Include="App_Data\FIT5032_MyDatabase1_log.ldf">
       <DependentUpon>FIT5032_MyDatabase1.mdf</DependentUpon>
+    </Content>
+    <Content Include="App_Data\FIT5032_MyFirstModel.mdf" />
+    <Content Include="App_Data\FIT5032_MyFirstModel_log.ldf">
+      <DependentUpon>FIT5032_MyFirstModel.mdf</DependentUpon>
     </Content>
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -232,6 +253,17 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Models\FIT5032_MyFirstModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>FIT5032_MyFirstModel.Context.cs</LastGenOutput>
+      <DependentUpon>FIT5032_MyFirstModel.edmx</DependentUpon>
+    </Content>
+    <Content Include="Models\FIT5032_MyFirstModel.edmx.sql" />
+    <Content Include="Models\FIT5032_MyFirstModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>FIT5032_MyFirstModel.cs</LastGenOutput>
+      <DependentUpon>FIT5032_MyFirstModel.edmx</DependentUpon>
+    </Content>
     <Content Include="Models\FIT_5032_Model1.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>FIT_5032_Model1.edmx</DependentUpon>
@@ -250,6 +282,13 @@
     </EntityDeploy>
     <Content Include="Models\FIT_5032_Model1.edmx.diagram">
       <DependentUpon>FIT_5032_Model1.edmx</DependentUpon>
+    </Content>
+    <EntityDeploy Include="Models\FIT5032_MyFirstModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>FIT5032_MyFirstModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\FIT5032_MyFirstModel.edmx.diagram">
+      <DependentUpon>FIT5032_MyFirstModel.edmx</DependentUpon>
     </Content>
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
